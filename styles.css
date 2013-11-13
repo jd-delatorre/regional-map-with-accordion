@@ -1,0 +1,47 @@
+					.salesteam{background-color:#f3f1dc;}
+					.salesteam-container{width:810px; margin:0 auto; padding:25px 0;}
+					.salesteam-container h1{color:#a49a00;}
+
+					.team{width:575px; border-right-width: 1px; border-right-style:dashed; float:left;}
+					.teammate{width:285px; float:left;}
+					.teammate img{float:left; margin-right:15px;}
+					.teammate p{display:inline-block;}
+
+					.moreways{float:left; margin-left:25px;}
+					.moreways p:first-child{color:#a49a00;}
+
+					.salesmap{background-color:#fff; height:383px; width:810px; margin:25px auto;}
+
+					.territory{background-color:#EEDEBD;}
+					.territorysection div ul li h6{color:#fff;}
+					.territorysection{width:316px; float:right;}
+					.territorysection .toggle-container{max-height:499px;}
+					.territorysection .toggle-container ul li {padding:6px 0 9px 0;}
+					.territorysection .toggle-container ul li h6{padding:0; margin-left:15px;}
+
+					.toggle-content.territoryperson{background-color:#EEDEBD; margin-top:15px; padding:15px;}
+					.toggle-content.territoryperson img, .toggle-content.territoryperson p{ float:left; margin-right:15px;}
+			     #accordion h3{padding:10px 15px 10px 15px; font-size:18px;} #accordion h3 a{color:#fff!important; font:bold 16px/18px segoe ui, sans-serif;} #accordion .territoryperson{margin-top:0!important;} .ui-state-default .ui-icon-circle-arrow-e{position: absolute; background:url(/dagent_docroot/mainstay/common/image/nylim-sprite.png) no-repeat scroll -109px -269px transparent; height:35px; width:34px; overflow:hidden; right:15px; cursor:pointer; margin-top:-7px; margin-right:96px;} .ui-state-active .ui-icon-circle-arrow-s{position:absolute; background:url(/dagent_docroot/mainstay/common/image/nylim-sprite.png) no-repeat scroll -109px -412px transparent!important; height:35px; width:34px; overflow:hidden; right:15px; cursor:pointer; margin-top:-7px; margin-right:96px;} #map{width:432px!important;} .territorysection{width:303px!important;} .salesmap{padding:20px 20px 10px 20px; width:767px!important;} .toggle-container .toggle{top:3px;} .toggle-content{background-color:#EEDEBD; margin-top:15px;} #west{background-color:#e1ebf4;} #southeast{background-color:#e1ebe5;} #midwest{background-color:#edebcc;} #northeast{background-color:#EDDEBD;} .team{border-right-color:#acb6ab;} .moreways p.bold{font-family:alda-web-nyl-n4, alda-web-nyl, Georgia, serif!important;} .west{background-color:#e1ebf4!important;} .southeast{background-color:#e1ebe5!important;} .midwest{background-color:#edebcc!important;} .northeast{background-color:#EDDEBD!important;} .hero .item{margin-right:505px!important;} .dcio-commentary{margin-left:31px!important;} .salesteam-container h3{color:#a49a00;} .salesteam-container a.nyl-btn-blue{margin-left:25px;} .specialwidth{width:188px!important;}
+					.west{background-color:#e1ebf4;} 
+					.southeast{background-color:#e1ebe5;} 
+					.midwest{background-color:#edebcc;}
+					.northeast{background-color:#EDDEBD;} 
+					.maptext{color:#a49a00; font-weight:bold; margin-top:-407px; float:right; font-size:13px; margin-right:45px;} 
+					#map{width:447px; height:399px; float:right; margin-right:20px; padding-top:25px;}
+
+					.territorysection .toggle-container ul li h6{margin-bottom:3px;}
+					.salesteam-container form button{margin-left:25px;} 
+					.territorysection .toggle-container ul li{padding:8px 0 0 0; min-height:30px;}
+					.territorysection .toggle-container{max-height: 420px;}
+					.team p.bold{margin-bottom:20px;} 
+					.teammate p{line-height:17px;} 
+					.moreways p.bold{font:16px/20px alda, sans-serif;} 
+					.territoryperson p{line-height:17px;}
+					.martop5{margin-top:5px;}  
+					.territorysection{float:right; width:303px;}
+					#accordion h3{padding:10px 15px 10px 15px; font-size:18px;margin-bottom:0; margin-top:0;}
+					#accordion h3 a{text-decoration:none!important;}
+					.steel{background-color: #1d5e75;}
+					.grass{background-color:#a49a00;}
+					.forest{background-color: #006b3b;}
+					.sunset{background-color: #dca728;}
