@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>US Map Demo</title>
+
+	<script src="../lib/raphael.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="color.jquery.js"></script>
+	<script src="../jquery-ui.js"></script>
+	<script src="../jquery-widgets.js"></script>	
+	<script src="../jquery-accordion.js"></script>	
+	<script src="../jquery.usmap.js"></script>
+	<script src="map.js"></script>	
+	<script type="text/javascript"> 
+		$(function() { 
+			var icons = { header: "ui-icon-circle-arrow-e", activeHeader: "ui-icon-circle-arrow-s" }; 
+			$( "#accordion" ).accordion({ icons: icons, header:"h3", active:3, collapsible:true, }); 
+			/*$( "#toggle" ).button().click(function() { if ( $( "#accordion" ).accordion( "option", "icons" ) ) { $( "#accordion" ).accordion( "option", "icons", null ); } else { $( "#accordion" ).accordion( "option", "icons", icons ); } }); */
+			$("#southeastpanel").click(function() { if(!$('#southeastpanel').hasClass("ui-state-active")){ } else{ $('#map').usmap('trigger', 'SOUTHEAST', 'click'); } }); 
+			$("#northeastpanel").click(function() { if(!$('#northeastpanel').hasClass("ui-state-active")){ } else{ $('#map').usmap('trigger', 'NORTHEAST', 'click'); } }); 
+			$("#westpanel").click(function() { if(!$('#westpanel').hasClass("ui-state-active")){ } else{ $('#map').usmap('trigger', 'WEST', 'click'); } }); 
+			$("#midwestpanel").click(function() { if(!$('#midwestpanel').hasClass("ui-state-active")){ } else{ $('#map').usmap('trigger', 'MIDWEST', 'click'); } }); 
+		}); 
+		</script>
+		<!--[if lt IE 9]> <script type="text/javascript"> $(function() { $('#map').hide(); var icons = { header: "ui-icon-circle-arrow-e", activeHeader: "ui-icon-circle-arrow-s" }; $( "#accordion" ).accordion({ icons: icons, header:"h3", active:3, collapsible:true, }); $( "#toggle" ).button().click(function() { if ( $( "#accordion" ).accordion( "option", "icons" ) ) { $( "#accordion" ).accordion( "option", "icons", null ); } else { $( "#accordion" ).accordion( "option", "icons", icons ); } }); $("#southeastpanel").click(function() { if(!$('#southeastpanel').hasClass("ui-state-active")){ } else{ $('#mapie').hide(); $('#mapiene').hide(); $('#mapiewest').hide(); $('#mapiemw').hide(); $('#mapiese').show(); } }); $("#northeastpanel").click(function() { if(!$('#northeastpanel').hasClass("ui-state-active")){ } else{ $('#mapie').hide(); $('#mapiese').hide(); $('#mapiewest').hide(); $('#mapiemw').hide(); $('#mapiene').show(); } }); $("#westpanel").click(function() { if(!$('#westpanel').hasClass("ui-state-active")){ } else{ $('#mapie').hide(); $('#mapiene').hide(); $('#mapiese').hide(); $('#mapiemw').hide(); $('#mapiewest').show(); } }); $("#midwestpanel").click(function() { if(!$('#midwestpanel').hasClass("ui-state-active")){ } else{ $('#mapie').hide(); $('#mapiene').hide(); $('#mapiewest').hide(); $('#mapiese').hide(); $('#mapiemw').show(); } }); }); </script> <![endif]--> 
+
+			     <link rel="stylesheet" type="text/css" href="../styles.css"> 
+			     <!--[if IE]> <style type="text/css"> .maptext{margin-top:-30px;} </style> <![endif]--> 
+
+</head>
+<body>
+<div class="salesmap"> 
+<div class="territorysection">
+<div class="accordion" id="accordion">
+<h3 class="steel openui" id="westpanel"><a href="#">West</a></h3>
+
+<div class="west toggle-content territoryperson">
+
+<p><strong>John Doe West</strong><br />
+Specialist<br />
+123-456-7890<br />
+10 years of experience<br />
+<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></p>
+
+<div class="clearfix"></div>
+
+<p><strong>John Doe West</strong><br />
+Associate<br />
+123-456-7890<br />
+7 years of experience<br />
+<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></p>
+
+<div class="clearfix"></div>
+</div>
+
+<h3 class="grass openui" id="midwestpanel"><a href="#">Midwest</a></h3>
+
+<div class="midwest toggle-content territoryperson"> 
+
+<p><strong>John Doe Midwest</strong><br />
+Specialist<br />
+123-456-7890<br />
+10 years of experience<br />
+<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></p>
+
+<div class="clearfix"></div>
+
+<p><strong>John Doe Midwest</strong><br />
+Associate<br />
+123-456-7890<br />
+7 years of experience<br />
+<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></p>
+
+<div class="clearfix"></div>
+</div>
+
+<h3 class="forest openui" id="southeastpanel"><a href="#">Southeast</a></h3>
+
+<div class="southeast toggle-content territoryperson">
+
+<p><strong>John Doe Southeast</strong><br />
+Specialist<br />
+123-456-7890<br />
+10 years of experience<br />
+<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></p>
+
+<div class="clearfix"></div>
+
+<p><strong>John Doe Southeast</strong><br />
+Associate<br />
+123-456-7890<br />
+7 years of experience<br />
+<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></p>
+
+<div class="clearfix"></div>
+</div>
+
+<h3 class="sunset openui" id="northeastpanel"><a href="#">Northeast</a></h3>
+
+<div class="northeast toggle-content territoryperson">
+
+<p><strong>John Doe Northeast</strong><br />
+Specialist<br />
+123-456-7890<br />
+10 years of experience<br />
+<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></p>
+
+<div class="clearfix"></div>
+
+<p><strong>John Doe Northeast</strong><br />
+Associate<br />
+123-456-7890<br />
+7 years of experience<br />
+<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></p>
+
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+
+<div class="" id="map" style="width:400px; height:400px;">
+<div class="maptext">Click on a territory for contacts</div>
+</div>
+ </div> 
+</body>
+</html>
